@@ -1,12 +1,6 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.Clock {
+  border: 2px solid black;
+  background-color: #fff123;
+  width: 8%;
+  float: right;
 }
