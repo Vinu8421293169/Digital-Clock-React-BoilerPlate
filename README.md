@@ -8,9 +8,12 @@
   * Use of JavaScript class Date.
   * Update Digital Clock in Every second.
   * Terminate Digital Clock on unmounting.
+  * Main div should have class name 'Clock'.
+  * Inside main div create a h3 tag element with id 'time', and put your time string inside it.
   
 ### Time Format
  * 1:13:53 PM
  * HH:MM:SS{space}PM
  * HH:MM:SS{space}AM
+
 
