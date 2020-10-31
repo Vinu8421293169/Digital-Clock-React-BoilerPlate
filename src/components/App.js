@@ -25,13 +25,22 @@ class App extends Component {
   }
   componentDidMount() {
     setInterval(() => {
-      let t = new Date();
       this.setState({
-        hours: t.getHours(),
-        minutes: t.getMinutes(),
-        seconds: t.getSeconds()
+        seconds: (this.state.seconds + 1) % 60
       });
     }, 1000);
+
+    setInterval(() => {
+      this.setState({
+        seconds: (this.state.minutes + 1) % 60
+      });
+    }, 60000);
+
+    setInterval(() => {
+      this.setState({
+        seconds: (this.state.hours + 1) % 60
+      });
+    }, 3600000);
   }
 }
 
